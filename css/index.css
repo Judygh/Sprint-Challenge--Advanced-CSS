@@ -277,18 +277,10 @@ footer {
   body .walk {
     display: flex;
     flex-direction: column-reverse;
-    width: auto;
-  }
-  body .walk img.astroWalk {
-    width: 320px;
-    height: 320px;
-  }
-  body .walk .walk-img {
     justify-content: center;
   }
-  body .walk .walk-text .btn {
-    text-align: center;
-    width: 100%;
-    padding: 15px;
+  body .walk .walk img.space-walk {
+    width: 320px;
+    height: 320px;
   }
 }
