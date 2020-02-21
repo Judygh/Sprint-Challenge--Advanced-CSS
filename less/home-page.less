@@ -62,13 +62,7 @@
       }
 
       .btn{
-        padding: 10px;
-        background-color: @btn-bg-color; 
-        font-size:1.6rem ;
-        color: @wild-sand;
-        border-radius: 10px;
-        width: 150px;
-        text-align: center;
+        .cust-btn()
       }
     }
 
@@ -84,3 +78,34 @@
     }
   }
 }// home
+/* mobile */
+body {
+@media @phone {
+.space-images img.sky, img.launch {
+  display: none;
+}
+.space-images{
+  justify-content: center;
+}
+.space-images img.blast {
+  width: 320px;
+  height: 320px;
+}
+@media @phone {
+      .walk {
+      display: flex;
+      flex-direction: column-reverse;
+      img.astroWalk {
+        padding: -20px;
+        width: 320px;
+        height: 320px;
+      }
+      .walk-text .btn {
+        .cust-btn2();
+      }
+      p {
+        font-size: 2rem;
+        margin-top: 12px;
+      }
+    }
+  }

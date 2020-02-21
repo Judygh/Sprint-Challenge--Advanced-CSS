@@ -160,6 +160,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top-header {
+  background-color: #F1F1F1;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -251,4 +254,16 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+/* mobile */
+.space-images img.sky,
+img.launch {
+  display: none;
+}
+.space-images {
+  justify-content: center;
+}
+.space-images img.blast {
+  width: 320px;
+  height: 320px;
 }
