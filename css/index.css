@@ -160,6 +160,24 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+a {
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  font-size: 1.9rem;
+  padding: 10px;
+}
+h1 {
+  font-size: 2.8rem;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +187,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-img {
+  width: 100%;
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
