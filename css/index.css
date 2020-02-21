@@ -246,6 +246,10 @@ footer {
   width: 150px;
   text-align: center;
 }
+.home .walk .walk-text .btn:hover {
+  background: black;
+  color: white;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -256,14 +260,35 @@ footer {
   border-radius: 10px;
 }
 /* mobile */
-.space-images img.sky,
-img.launch {
-  display: none;
+@media (max-width: 500px) {
+  body .space-images img.sky,
+  body img.launch {
+    display: none;
+  }
+  body .space-images {
+    justify-content: center;
+  }
+  body .space-images img.blast {
+    width: 320px;
+    height: 320px;
+  }
 }
-.space-images {
-  justify-content: center;
-}
-.space-images img.blast {
-  width: 320px;
-  height: 320px;
+@media (max-width: 500px) {
+  body .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+  }
+  body .walk img.astroWalk {
+    width: 320px;
+    height: 320px;
+  }
+  body .walk .walk-img {
+    justify-content: center;
+  }
+  body .walk .walk-text .btn {
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+  }
 }
