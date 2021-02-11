@@ -1,5 +1,9 @@
 // Home Content
 
+.main-img{
+  width: 100%;
+  border-radius: 10px;
+}
 .home {
 
   .intro {
@@ -57,7 +61,14 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn{
+        .cust-btn();
+
+          &:hover {
+          background: black;
+          color: white;
+        }
+
       }
     }
 
@@ -72,4 +83,35 @@
       }
     }
   }
-}// home
+}
+// home
+/* mobile */
+body {
+  @media @mobile {
+    .space-images img.sky,
+    img.launch {
+      display: none;
+    }
+    .space-images {
+      justify-content: center;
+    }
+    .space-images img.blast {
+      width: 320px;
+      height: 320px;
+    }
+  }
+  @media @mobile {
+      .walk {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+
+      .walk img.space-walk {
+        width: 320px;
+        height: 320px;
+      }
+
+   
+  }
+}
+}

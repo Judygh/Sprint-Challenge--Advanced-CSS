@@ -1,1 +1,16 @@
 // Mixins Here
+.cust-btn() {
+        padding: 10px;
+        background-color: @btn-bg-color; 
+        font-size:1.6rem ;
+        color: @wild-sand;
+        border-radius: 10px;
+        width: 150px;
+        text-align: center;
+}
+.cust-btn2() {
+@media @phone {
+    text-align: center;
+    width: 100%;
+}
+}
